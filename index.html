@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#651c30">
+
+  <title>Siempre tú ♡</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="java/java.js"defer></script>
+</head>
+
+<body>
+  <!-- Decoración: no bloquea botones ni contenido -->
+  <div id="hearts" aria-hidden="true"></div>
+
+  <header class="header">
+    <a href="#inicio" class="logo">pour toi ♡</a>
+
+    <span class="header-date">DESDE EL 31 · 12 · 2022</span>
+
+    <button id="motion" class="motion" aria-pressed="false">
+      Pausar corazones
+    </button>
+  </header>
+
+  <main id="inicio">
+    <section class="intro">
+      <p class="eyebrow">UN PEQUEÑO LIBRO DE NOSOTROS</p>
+
+      <h1>Siempre <span>tú.</span></h1>
+
+      <p class="intro-text">
+        Para un amor que no cabe en una pantalla.
+      </p>
+    </section>
+
+    <div class="book">
+      <nav class="tabs" aria-label="Páginas del libro">
+  <button data-page="nosotros" aria-current="page">
+    01 · Nosotros
+  </button>
+
+  <button data-page="carta">
+    02 · Mi carta
+  </button>
+
+  <button data-page="razones">
+    03 · Te elijo
+  </button>
+
+  <button data-page="futuro">
+    04 · Algún día
+  </button>
+
+  <button data-page="musica">
+    05 · OUR PLAYLIST
+  </button>
+</nav>
+      </nav>
+
+      <!-- PÁGINA 1 -->
+      <section id="nosotros" class="spread">
+        <div class="page wine cover">
+          <p class="eyebrow">UNA EDICIÓN HECHA CON AMOR</p>
+
+          <div>
+            <span class="script">Mon amour,</span>
+
+            <h2>
+              qué bonito<br>
+              coincidir<br>
+              contigo.
+            </h2>
+
+            <div class="seal">♥</div>
+          </div>
+
+          <p class="eyebrow">NUESTRA HISTORIA CONTINÚA</p>
+        </div>
+
+        <div class="page cream collage">
+          <div class="stamp">
+            31
+            <small>DIC · 2022</small>
+          </div>
+
+          <article class="paper-note">
+            <span class="script">Tú & yo</span>
+
+            <p>
+              Distintas pantallas.<br>
+              Una misma historia.
+            </p>
+
+            <span class="drawn-heart">♡</span>
+          </article>
+
+          <div class="ticket">
+            <small>DESTINO</small>
+            <strong>Donde estés tú</strong>
+            <small>SOLO IDA · SIN FECHA DE REGRESO</small>
+          </div>
+
+          <p class="handwriting">
+            Hay distancias que no saben<br>
+            lo cerca que te siento.
+          </p>
+
+          <button class="primary" data-open="carta">
+            Tengo algo que decirte ↗
+          </button>
+        </div>
+      </section>
+
+      <!-- PÁGINA 2: CARTA -->
+      <section id="carta" class="spread" hidden>
+        <article class="page cream letter">
+          <p class="eyebrow">PARA LEER DESPACITO</p>
+
+          <h2 class="section-title">
+            Una carta<br>
+            <span>para mi esposo</span>
+          </h2>
+
+          <!-- Cambia estos párrafos por tus propias palabras -->
+          <p>My husband:</p>
+
+          <p>
+            El 31 de diciembre de 2022 dejó de ser solamente
+            el último día de un año. Desde entonces, también
+            es el principio de nosotros. Y hoy quise hacerte
+            algo que pudieras abrir cuando quisieras:
+            un pequeño lugar donde encontrar lo que siento por ti.
+          </p>
+
+          <p>
+            A veces quisiera poder saltarme la distancia.
+            Llegar hasta donde estás, sentarme a tu lado
+            y hablar de cualquier cosa, sin una pantalla
+            de por medio. Poder abrazarte sin imaginarlo
+            y compartir contigo esos momentos sencillos
+            que se vuelven especiales por la compañía.
+          </p>
+
+          <p>
+            Mientras llega ese momento, quiero seguir
+            encontrando maneras de acercarme a ti.
+            Esta página es una de ellas. La hice pensando
+            en nosotros, en nuestra fecha y en todo lo que
+            todavía me ilusiona vivir contigo.
+          </p>
+        </article>
+
+        <article class="page cream letter">
+          <p class="eyebrow">CONTINUACIÓN DE ALGO BONITO</p>
+
+          <blockquote>
+            Mi lugar favorito<br>
+            también puede ser<br>
+            una <em>persona.</em>
+          </blockquote>
+
+          <p>
+            No tenemos una colección de fotos juntos todavía,
+            pero eso no significa que esta historia esté vacía.
+            Tiene lo que sentimos, lo que compartimos
+            y todas esas pequeñas cosas que solamente
+            nosotros entendemos.
+          </p>
+
+          <p>
+            Me importas. Me importa cómo estás, lo que sueñas
+            y cómo te sientes conmigo. Quiero que sigamos
+            conociéndonos, escuchándonos y cuidando lo nuestro,
+            incluso cuando no sea fácil encontrar las palabras.
+          </p>
+
+          <p>
+            Ojalá al recorrer estas páginas sientas el cariño
+            con el que pensé cada detalle. Quería regalarte
+            algo hecho por mí, algo que dijera “pensé en ti”
+            de una forma distinta.
+          </p>
+
+          <p>
+            Feliz aniversario, mi pedacito de vida, mi esposo y futuro padre de mis hijos.
+            Me hace ilusión seguir escribiendo
+            esta historia contigo y vernos crecer juntos en todas las maneras y formar la familia que tanto hemos anhelado, te amo eternidades D.
+          </p>
+
+          <p class="signature">
+            Con amor,<br>
+            <span class="script">Laura Reyes ♡</span>
+          </p>
+        </article>
+      </section>
+
+      <!-- PÁGINA 3: MENSAJES INTERACTIVOS -->
+      <section id="razones" class="spread" hidden>
+        <div class="page wine reasons-cover">
+          <p class="eyebrow">LAS COSAS PEQUEÑAS</p>
+
+          <h2>
+            No es una<br>
+            sola razón.<br>
+            <span>Eres tú.</span>
+          </h2>
+
+          <p>
+            Toca cada corazón.<br>
+            Hay un mensaje para ti.
+          </p>
+
+          <span class="large-heart">♡</span>
+        </div>
+
+        <div class="page cream">
+          <h2 class="script reasons-title">
+            Te elijo porque…
+          </h2>
+
+          <div class="reasons-grid">
+            <button class="reason" aria-expanded="false">
+              <span class="reason-front">01 ♡</span>
+              <span class="reason-back">
+                Me ilusiona compartir mi vida contigo.
+              </span>
+            </button>
+
+            <button class="reason" aria-expanded="false">
+              <span class="reason-front">02 ♡</span>
+              <span class="reason-back">
+                Quiero conocer todas tus versiones.
+              </span>
+            </button>
+
+            <button class="reason" aria-expanded="false">
+              <span class="reason-front">03 ♡</span>
+              <span class="reason-back">
+                Estás en mis planes más bonitos.
+              </span>
+            </button>
+
+            <button class="reason" aria-expanded="false">
+              <span class="reason-front">04 ♡</span>
+              <span class="reason-back">
+                Incluso a distancia, tienes un lugar en mi vida.
+              </span>
+            </button>
+
+            <button class="reason" aria-expanded="false">
+              <span class="reason-front">05 ♡</span>
+              <span class="reason-back">
+                Me gusta que esta historia sea nuestra.
+              </span>
+            </button>
+
+            <button class="reason" aria-expanded="false">
+              <span class="reason-front">06 ♡</span>
+              <span class="reason-back">
+                Quiero seguir construyendo algo bonito contigo.
+              </span>
+            </button>
+          </div>
+
+          <p class="handwriting">
+            Y todavía me quedan tantas cosas por decirte…
+          </p>
+        </div>
+      </section>
+
+      <!-- PÁGINA 4 -->
+      <section id="futuro" class="spread" hidden>
+        <div class="page cream">
+          <p class="eyebrow">LO QUE NOS ILUSIONA</p>
+
+          <h2 class="section-title">
+            Algún día,<br>
+            <span>sin pantallas.</span>
+          </h2>
+
+          <p class="body-text">
+            Hay cosas que todavía no tienen fecha,
+            pero ya tienen un lugar en mi corazón.
+          </p>
+
+          <ul class="dreams">
+            <li>Nuestro primer abrazo.</li>
+            <li>Un café sin mirar la hora.</li>
+            <li>Caminar juntos sin un destino.</li>
+            <li>Nuestra primera foto juntos.</li>
+            <li>Un día sencillo que podamos llamar nuestro.</li>
+          </ul>
+        </div>
+
+        <div class="page wine future-page">
+          <p class="eyebrow">RESERVADO PARA NOSOTROS</p>
+
+          <div class="photo-space">
+            <span>♡</span>
+
+            <p>
+              Aquí irá nuestra<br>
+              <em>primera foto juntos.</em>
+            </p>
+
+            <small>
+              Qué bonito será volver a esta página.
+            </small>
+          </div>
+
+          <button id="surprise-button" class="light-button">
+            Una última cosita ↗
+          </button>
+			
+        </div>
+      </section>
+		
+	<!-- PÁGINA 5: NUESTRA MÚSICA -->
+<section id="musica" class="spread music-spread" hidden>
+  <div class="page wine music-cover">
+    <p class="eyebrow">CUATRO CANCIONES · UNA DEDICATORIA</p>
+
+    <h2>
+      Si pudiera<br>
+      decirlo con<br>
+      <span>una canción…</span>
+    </h2>
+
+    <div class="record-decoration" aria-hidden="true">
+      <span>♡</span>
+    </div>
+
+    <p class="music-cover-text">
+      Hay canciones que me hacen imaginarte cerca.
+      Elegí estas cuatro para regalarte un poquito
+      de lo que siento, incluso cuando no encuentro
+      la forma de decirlo.
+    </p>
+
+    <p class="music-footnote">
+      Para escucharlas sin prisa.<br>
+      Y, algún día, bailarlas contigo.
+    </p>
+  </div>
+
+  <div class="page cream music-page">
+    <p class="eyebrow">ELIGE UN DISCO Y DESCUBRE SU MENSAJE</p>
+
+    <h2 class="script music-title">La banda sonora de nosotros</h2>
+
+    <div class="song-grid">
+      <button
+        class="song-button"
+        data-song="moon"
+        aria-expanded="false"
+        aria-controls="song-message"
+      >
+        <span class="mini-record" aria-hidden="true">
+          <span>01</span>
+        </span>
+
+        <strong>Fly Me to the Moon</strong>
+        <small>FRANK SINATRA</small>
+        <span class="song-hint">Un amor que hace soñar ↗</span>
+      </button>
+
+      <button
+        class="song-button"
+        data-song="tonight"
+        aria-expanded="false"
+        aria-controls="song-message"
+      >
+        <span class="mini-record" aria-hidden="true">
+          <span>02</span>
+        </span>
+
+        <strong>The Way You Look Tonight</strong>
+        <small>FRANK SINATRA</small>
+        <span class="song-hint">La ternura de pensarte ↗</span>
+      </button>
+
+      <button
+        class="song-button"
+        data-song="unforgettable"
+        aria-expanded="false"
+        aria-controls="song-message"
+      >
+        <span class="mini-record" aria-hidden="true">
+          <span>03</span>
+        </span>
+
+        <strong>Unforgettable</strong>
+        <small>NAT KING COLE</small>
+        <span class="song-hint">Tu lugar en mi historia ↗</span>
+      </button>
+
+      <button
+        class="song-button"
+        data-song="love"
+        aria-expanded="false"
+        aria-controls="song-message"
+      >
+        <span class="mini-record" aria-hidden="true">
+          <span>04</span>
+        </span>
+
+        <strong>L-O-V-E</strong>
+        <small>NAT KING COLE</small>
+        <span class="song-hint">La alegría de elegirte ↗</span>
+      </button>
+    </div>
+
+    <div class="music-empty" id="music-empty">
+      <span aria-hidden="true">♡</span>
+      <p>
+        Toca un vinilo.<br>
+        Hay algo que quiero decirte.
+      </p>
+    </div>
+
+    <article
+      id="song-message"
+      class="song-message"
+      aria-labelledby="song-title"
+      hidden
+    >
+      <p class="eyebrow" id="song-kicker"></p>
+
+      <h3 id="song-title" tabindex="-1"></h3>
+
+      <p class="song-label">LO QUE REPRESENTA PARA MÍ</p>
+      <p id="song-meaning"></p>
+
+      <div class="song-divider" aria-hidden="true">♡</div>
+
+      <p class="song-label">POR ESO TE LA DEDICO</p>
+      <p id="song-dedication"></p>
+
+      <a
+        id="song-link"
+        class="song-link"
+        href="https://www.youtube.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Buscar esta canción en YouTube ↗
+      </a>
+
+      <p class="song-signature">
+        Con cariño, para ti.
+      </p>
+    </article>
+  </div>
+</section>
+
+      <div class="book-footer">
+        <span id="chapter">CAPÍTULO 01 / NOSOTROS</span>
+        <span>HECHO PARA TI, CON AMOR ♡</span>
+      </div>
+    </div>
+
+    <!-- CONTADOR -->
+    <section class="time-section">
+      <p class="eyebrow">DESDE AQUEL 31 DE DICIEMBRE</p>
+
+      <h2>Y seguimos <span>sumando.</span></h2>
+
+      <div class="counter" aria-label="Tiempo juntos">
+        <div>
+          <strong id="days">0</strong>
+          <span>días</span>
+        </div>
+
+        <div>
+          <strong id="hours">00</strong>
+          <span>horas</span>
+        </div>
+
+        <div>
+          <strong id="minutes">00</strong>
+          <span>minutos</span>
+        </div>
+
+        <div>
+          <strong id="seconds">00</strong>
+          <span>segundos</span>
+        </div>
+      </div>
+
+      <p class="handwriting">
+        De una historia que todavía tiene mucho por vivir.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Tú, yo y todos los capítulos que vienen. ♡
+  </footer>
+
+  <!-- VENTANA SORPRESA -->
+  <dialog id="surprise">
+    <button class="close" aria-label="Cerrar mensaje">×</button>
+
+    <span class="script">Mi deseo…</span>
+
+    <p>
+      Que algún día podamos leer todo esto juntos,<br>
+      en el mismo lugar.
+    </p>
+
+    <span class="large-heart">♡</span>
+  </dialog>
+
+  <noscript>
+    Activa JavaScript para explorar las páginas y sus sorpresas.
+  </noscript>
+</body>
+</html>
